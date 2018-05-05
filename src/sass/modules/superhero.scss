@@ -1,0 +1,46 @@
+/*
+ ____  _   _ ____  _____ ____  _   _ _____ ____   ___  
+/ ___|| | | |  _ \| ____|  _ \| | | | ____|  _ \ / _ \ 
+\___ \| | | | |_) |  _| | |_) | |_| |  _| | |_) | | | |
+ ___) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
+|____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\\___/ 
+                                                       
+*/
+
+.banner {
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/mainPhoto.jpg");
+  background-size: cover;
+  margin-top: 0em;
+  border-top: 3px solid $orange-potion;
+  border-bottom: 3px solid $orange-potion;
+}
+
+.header {
+  h1 {
+    color: $white;
+    font-family: $font-2;
+    font-size: 2.3rem;
+    font-weight: 200;
+
+    span {
+      font-family: $font-3;
+      color: $orange-potion;
+      font-size: 1rem;
+      padding: 0em 0em 0em 0.65em;
+    }
+  }
+
+  //small range (0px --> 640px)
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    h1 {
+      font-size: 1.7rem;
+      padding: 0em 0em 0em 1em;
+
+      span {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

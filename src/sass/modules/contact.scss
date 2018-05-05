@@ -1,0 +1,71 @@
+/*
+  ____ ___  _   _ _____  _    ____ _____ 
+ / ___/ _ \| \ | |_   _|/ \  / ___|_   _|
+| |  | | | |  \| | | | / _ \| |     | |  
+| |__| |_| | |\  | | |/ ___ \ |___  | |  
+ \____\___/|_| \_| |_/_/   \_\____| |_|  
+                                                                                                                                                      
+*/
+.contactButtons {
+  li {
+    font-size: 1em;
+    font-family: $font-3;
+
+    a {
+      color: #555555;
+
+      &:hover {
+        color: $orange-potion;
+
+        i {
+          color: $orange-potion;
+        }
+      }
+    }
+  }
+}
+
+.contactBody {
+  margin-top: 30px;
+
+  h2 {
+    color: $white;
+    font-family: $font-2;
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+  }
+
+  padding-bottom: 40px;
+}
+
+.contactBodyMap {
+  text-align: right;
+
+  //small range (0px --> 640px)
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+.contactBodyText {
+  color: $white;
+  font-family: $font-3;
+  line-height: 1.4rem;
+  text-align: left;
+
+  //small range (0px --> 640px)
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    text-align: center;
+  }
+
+  .button {
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: $orange-potion;
+
+    &:hover {
+      background-color: darken($orange-potion, 8%);
+    }
+  }
+}

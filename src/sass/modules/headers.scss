@@ -1,0 +1,39 @@
+/*
+ _   _ _____    _    ____  _____ ____  ____
+| | | | ____|  / \  |  _ \| ____|  _ \/ ___|
+| |_| |  _|   / _ \ | | | |  _| | |_) \___ \
+|  _  | |___ / ___ \| |_| | |___|  _ < ___) |
+|_| |_|_____/_/   \_\____/|_____|_| \_\____/
+
+*/
+
+.pageTitle {
+  color: $white;
+  font-family: $font-2;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+
+  //small range (0px --> 640px)
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
+
+.sectionHeader {
+  padding: 1em 0em 1em 0em;
+  border-top: 1px solid $orange-potion;
+  border-bottom: 1px solid $orange-potion;
+
+  h1 {
+    font-size: 1.5rem;
+    font-family: $font-2;
+    font-weight: 200;
+  }
+
+  span {
+    margin-top: -10px;
+  }
+
+  @extend .header;
+}

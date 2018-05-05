@@ -1,0 +1,85 @@
+/*
+  ____       _   _
+ |  _ \ ___ | |_(_) ___  _ __
+ | |_) / _ \| __| |/ _ \| '_ \
+ |  __/ (_) | |_| | (_) | | | |
+ |_|   \___/ \__|_|\___/|_| |_|
+*/
+
+/**
+ *
+ * #########%% BASE %%#########
+ ~
+ * RESET...............Resetting all styles to default
+ * NORMALIZE...........Normalize.css
+ * MAIN................General catch all for generic styles
+ * GRIDS...............Potion's Fluid Grid system
+ * TYPE................Font declarations
+ * HELPERS.............A series of helper classes to use on demand
+
+ * #########%% GLOBAL %%#########
+ ~
+ * MIXINS..............Mixins to be used by other SASS files globally
+ * VARS................Variable definitions to be used by other SASS files globally
+
+ * #########%% MODULES %%#########
+ ~
+ * ACCORDIONS..........Accordions and vanishing content classes
+ * ALERTS..............Alert classes
+ * BUTTONS.............Button classes
+ * CODE................<code> block classes
+ * FORMS...............Form classes
+ * HEADINGS............Headings classes
+ * ICONS...............Icons classes
+ * IMAGES..............Image classes
+ * LISTS...............Styling for order and unordered lists
+ * MODALS..............Styles for modal pop ups
+ * NAV.................Starter nav styles
+ * MAGICTABS...........Potion's responsive tab to accordions
+ * RULES...............Styling for <hr> tags
+ * SUPERHEROS..........Styling for header banners or heros but in a super way!
+ * TABLES..............Table classes
+ * STYLEGUIDES.........Sytles only relating to the styleguide sample sheet, does not affect Potion
+ */
+
+@charset "UTF-8";
+
+/* ## Base ## */
+@import "base/reset";
+@import "base/normalize";
+@import "base/main";
+@import "base/grids";
+@import "base/type";
+@import "base/helpers";
+
+/* ## Modules ## */
+@import "modules/buttons";
+@import "modules/headers";
+@import "modules/superhero";
+@import "modules/nav";
+@import "modules/about";
+@import "modules/contact";
+@import "modules/artists";
+@import "modules/portfolios";
+@import "modules/aftercare";
+@import "modules/contact";
+
+html,
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  font-family: $font-3;
+}
+
+.name img {
+  width: 90%;
+  padding-top: 0.6em;
+
+  //small range (0px --> 640px)
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    padding-top: 0.3em;
+    z-index: 1000;
+    width: 85%;
+    margin-top: -2px;
+  }
+}

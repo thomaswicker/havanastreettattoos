@@ -1,0 +1,61 @@
+/*
+ _   _    ___     __
+| \ | |  / \ \   / /
+|  \| | / _ \ \ / /
+| |\  |/ ___ \ V /
+|_| \_/_/   \_\_/
+
+*/
+
+.top-bar {
+  background-color: black !important;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: black;
+  padding-top: 0.5em;
+
+  &:hover {
+    background-color: black;
+    color: $orange-potion;
+  }
+}
+
+.top-bar,
+.title-area {
+  //small range (0px --> 640px)
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    height: 55px;
+    border-bottom: 1px solid $orange-potion;
+    background-color: $black;
+  }
+}
+
+.top-bar-section ul li {
+  //small range (0px --> 640px)
+  @media only screen and (min-width: 0em) and (max-width: 40em) {
+    text-align: center;
+    border-bottom: 1px solid $white;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+
+    //small range (0px --> 640px)
+    @media only screen and (min-width: 0em) and (max-width: 40em) {
+      font-size: 1.1rem !important;
+    }
+  }
+}
+
+.top-bar.expanded .title-area {
+  background-color: $black;
+}
+
+.bodyText {
+  p {
+    font-size: 1em;
+    font-family: $font-3;
+  }
+}
