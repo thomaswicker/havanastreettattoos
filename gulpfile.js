@@ -42,7 +42,11 @@ gulp.task("hello", function() {
 gulp.task("sass", function() {
   return gulp
     .src(sassSources)
-    .pipe(sass())
+    .pipe(
+      sass({
+        includePaths: ["node_modules/motion-ui/src"]
+      })
+    )
     .pipe(gulp.dest("dist/css"))
     .pipe(rename({ suffix: ".min" }))
     .pipe(cssnano())

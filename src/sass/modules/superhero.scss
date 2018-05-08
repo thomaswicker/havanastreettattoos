@@ -1,46 +1,176 @@
 /*
- ____  _   _ ____  _____ ____  _   _ _____ ____   ___  
-/ ___|| | | |  _ \| ____|  _ \| | | | ____|  _ \ / _ \ 
+ ____  _   _ ____  _____ ____  _   _ _____ ____   ___
+/ ___|| | | |  _ \| ____|  _ \| | | | ____|  _ \ / _ \
 \___ \| | | | |_) |  _| | |_) | |_| |  _| | |_) | | | |
  ___) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
-|____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\\___/ 
-                                                       
+|____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\\___/
+
 */
 
-.banner {
-  width: 100%;
-  height: 300px;
-  background-image: url("../img/mainPhoto.jpg");
+.superhero {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 80px 60px;
+  background-color: $xdark-gray;
+  background-image: url("../img/superhero-background.jpg");
   background-size: cover;
-  margin-top: 0em;
+  background-repeat: no-repeat;
+  text-align: center;
   border-top: 3px solid $orange-potion;
-  border-bottom: 3px solid $orange-potion;
-}
 
-.header {
-  h1 {
-    color: $white;
-    font-family: $font-2;
-    font-size: 2.3rem;
-    font-weight: 200;
+  @include mq(md) {
+    background-image: url("../img/superhero-background--mobile.jpg");
+  }
 
-    span {
-      font-family: $font-3;
-      color: $orange-potion;
-      font-size: 1rem;
-      padding: 0em 0em 0em 0.65em;
+  @include mq(sm) {
+    background-image: url("../img/superhero-background--mobile.jpg");
+  }
+
+  > * {
+    flex: 1 100%;
+  }
+
+  .superhero-links {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    li {
+      flex: 1;
+      margin-right: 15px;
+
+      a svg {
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      &.facebook-icon-link a {
+        svg {
+          max-width: 20px;
+
+          path {
+            fill: #676767;
+          }
+        }
+      }
+
+      &.instagram-icon-link a {
+        svg {
+          max-width: 25px;
+
+          path {
+            fill: #676767;
+          }
+        }
+      }
+
+      &:hover {
+        &.facebook-icon-link a {
+          svg {
+            path {
+              fill: $orange-potion;
+            }
+          }
+        }
+
+        &.instagram-icon-link a {
+          svg {
+            path {
+              fill: $orange-potion;
+            }
+          }
+        }
+      }
     }
   }
 
-  //small range (0px --> 640px)
-  @media only screen and (min-width: 0em) and (max-width: 40em) {
-    h1 {
-      font-size: 1.7rem;
-      padding: 0em 0em 0em 1em;
+  .superhero-illustration-container {
+    flex: 1 100%;
 
-      span {
-        font-size: 0.95rem;
+    img.superhero-illustration {
+      max-width: 300px;
+    }
+  }
+
+  .superhero-title {
+    font-size: 100px;
+    color: $white;
+    text-shadow: 2px 2px 2px $black;
+  }
+
+  .superhero-subtitle {
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-family: $font-2;
+    font-size: 27px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px $black;
+    color: $orange-potion;
+  }
+
+  .hours-of-operation {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: $font-2;
+    font-weight: 600;
+    color: $white;
+    text-shadow: 2px 2px 2px $black;
+  }
+
+  .shop-phone-number {
+    margin-top: 20px;
+
+    @include mq(sm) {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    a {
+      font-size: 2.5rem;
+      font-family: $font-2;
+      font-weight: 400;
+      color: #dedede;
+      text-shadow: 2px 2px 2px $black;
+
+      &:hover {
+        color: $white;
       }
+    }
+  }
+
+  .specials-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: $font-2;
+    font-weight: 600;
+    color: $black;
+    border: none;
+    background-color: $orange-potion;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: lighten($orange-potion, 12%);
+      border: none;
+    }
+
+    @include mq(md) {
+      padding: 20px 50px;
+      font-size: 20px;
+    }
+
+    @include mq(sm) {
+      margin-top: 30px;
+      padding: 30px 60px;
+      font-size: 20px;
     }
   }
 }

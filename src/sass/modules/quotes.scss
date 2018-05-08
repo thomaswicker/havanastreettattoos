@@ -1,0 +1,98 @@
+/*
+  ___  _   _  ___ _____ _____ ____
+ / _ \| | | |/ _ \_   _| ____/ ___|
+| | | | | | | | | || | |  _| \___ \
+| |_| | |_| | |_| || | | |___ ___) |
+ \__\_\\___/ \___/ |_| |_____|____/
+
+*/
+
+.quote-carousel {
+  flex: 1 100%;
+  padding: 2% 0 2% 0;
+  background-color: $white;
+  background-image: none;
+
+  ul {
+    flex: 1 100%;
+
+    li.orbit-slide {
+      .quote-content {
+        margin-bottom: 10px;
+        padding: 10px 20% 0 20%;
+        font-family: $font-2;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 145%;
+        text-align: left;
+        color: $black;
+      }
+
+      .quotee {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0 20%;
+        text-align: left;
+        color: $black;
+        font-family: $font-2;
+        font-size: 1.1rem;
+        font-style: italic;
+        font-weight: 700;
+
+        .quotee-name {
+          padding-right: 1px;
+        }
+
+        .quotee-from {
+          padding-left: 1px;
+          padding-right: 1px;
+        }
+
+        .quotee-source {
+          padding-left: 1px;
+        }
+      }
+    }
+
+    .orbit-previous,
+    .orbit-next {
+      background-color: transparent;
+      border: 0;
+      transition: all 140ms ease-in-out;
+
+      &:hover {
+        background-color: transparent;
+        border: 0;
+
+        svg {
+          transform: scale(1.1);
+
+          path {
+            fill: #333333;
+          }
+        }
+      }
+
+      svg {
+        max-width: 30px;
+
+        path {
+          fill: #cccccc;
+        }
+      }
+    }
+
+    .orbit-previous {
+      &:hover svg {
+        animation: pulseleftarrow 1200ms infinite;
+      }
+    }
+
+    .orbit-next {
+      &:hover svg {
+        animation: pulserightarrow 1200ms infinite;
+      }
+    }
+  }
+}

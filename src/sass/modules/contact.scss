@@ -1,71 +1,107 @@
 /*
-  ____ ___  _   _ _____  _    ____ _____ 
+  ____ ___  _   _ _____  _    ____ _____
  / ___/ _ \| \ | |_   _|/ \  / ___|_   _|
-| |  | | | |  \| | | | / _ \| |     | |  
-| |__| |_| | |\  | | |/ ___ \ |___  | |  
- \____\___/|_| \_| |_/_/   \_\____| |_|  
-                                                                                                                                                      
+| |  | | | |  \| | | | / _ \| |     | |
+| |__| |_| | |\  | | |/ ___ \ |___  | |
+ \____\___/|_| \_| |_/_/   \_\____| |_|
+
 */
-.contactButtons {
-  li {
-    font-size: 1em;
-    font-family: $font-3;
 
-    a {
-      color: #555555;
+.contact-us-section {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px 60px 40px 60px;
+  background-color: $white;
+  color: $black;
+  text-align: left;
 
-      &:hover {
-        color: $orange-potion;
+  .section-title {
+    flex: 1 100%;
+    margin-bottom: 5px;
+    color: $black;
 
-        i {
-          color: $orange-potion;
-        }
+    @include mq(md) {
+      font-size: 5.5rem;
+      line-height: 140%;
+    }
+
+    @include mq(sm) {
+      font-size: 6rem;
+      line-height: 145%;
+    }
+
+    img {
+      position: relative;
+      top: 5px;
+      max-width: 35px;
+      margin-right: 5px;
+
+      @include mq(md) {
+        font-size: 5.5rem;
+        line-height: 140%;
+      }
+
+      @include mq(sm) {
+        font-size: 6rem;
+        line-height: 145%;
       }
     }
   }
-}
 
-.contactBody {
-  margin-top: 30px;
+  .contact-us-section--left {
+    flex: 0 0 33.333%;
 
-  h2 {
-    color: $white;
-    font-family: $font-2;
-    font-size: 1.6rem;
-    margin-bottom: 14px;
+    @include mq(md) {
+      flex: 0 0 100%;
+    }
+
+    @include mq(sm) {
+      flex: 0 0 100%;
+    }
   }
 
-  padding-bottom: 40px;
-}
+  .contact-us-section--right {
+    flex: 1;
+    padding-left: 50px;
+    color: $black;
 
-.contactBodyMap {
-  text-align: right;
+    @include mq(md) {
+      flex: 0 0 100%;
+    }
 
-  //small range (0px --> 640px)
-  @media only screen and (min-width: 0em) and (max-width: 40em) {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-}
+    @include mq(sm) {
+      flex: 0 0 100%;
+    }
 
-.contactBodyText {
-  color: $white;
-  font-family: $font-3;
-  line-height: 1.4rem;
-  text-align: left;
+    .shop--address {
+      font-family: $font-2;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 140%;
+      color: $black;
+    }
 
-  //small range (0px --> 640px)
-  @media only screen and (min-width: 0em) and (max-width: 40em) {
-    text-align: center;
-  }
+    .shop--phone {
+      margin: 10px 0 15px 0;
+      font-family: $font-2;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: $black;
+    }
 
-  .button {
-    margin-top: 10px;
-    padding: 10px 20px 10px 20px;
-    background-color: $orange-potion;
+    .contact-us--btn {
+      margin-top: 10px;
+      padding: 12px 30px;
+      background-color: $orange-potion;
+      font-family: $font-2;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $black;
+      border: 0;
 
-    &:hover {
-      background-color: darken($orange-potion, 8%);
+      &:hover {
+        background-color: lighten($orange-potion, 12%);
+      }
     }
   }
 }

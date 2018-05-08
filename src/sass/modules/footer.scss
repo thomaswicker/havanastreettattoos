@@ -1,0 +1,47 @@
+/*
+ _____ ___   ___ _____ _____ ____
+|  ___/ _ \ / _ \_   _| ____|  _ \
+| |_ | | | | | | || | |  _| | |_) |
+|  _|| |_| | |_| || | | |___|  _ <
+|_|   \___/ \___/ |_| |_____|_| \_\
+
+*/
+
+footer.site-footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 20px;
+  background-color: $xxdark-gray;
+
+  .footer--left {
+    flex: 1 70%;
+
+    .copyright-info-1 {
+      margin-bottom: 5px;
+      font-size: 0.8rem;
+    }
+
+    .copyright-info-2 {
+      font-size: 0.7rem;
+      color: $light-gray;
+    }
+  }
+
+  .footer--right {
+    flex: 1 30%;
+    padding-top: 5px;
+    font-family: $font-3;
+    font-size: 0.9rem;
+    line-height: 140%;
+    text-align: right;
+    color: $white;
+
+    a {
+      color: $orange-potion;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

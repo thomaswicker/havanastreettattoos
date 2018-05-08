@@ -1,0 +1,25 @@
+/*
+ ___ _   _ ____ _____  _    ____ ____      _    __  __
+|_ _| \ | / ___|_   _|/ \  / ___|  _ \    / \  |  \/  |
+ | ||  \| \___ \ | | / _ \| |  _| |_) |  / _ \ | |\/| |
+ | || |\  |___) || |/ ___ \ |_| |  _ <  / ___ \| |  | |
+|___|_| \_|____/ |_/_/   \_\____|_| \_\/_/   \_\_|  |_|
+
+*/
+
+.instagram-carousel {
+  position: relative;
+  display: flex;
+  padding: 20px 40px;
+  background-color: $xdark-gray;
+  border-top: 1px solid $orange-potion;
+  border-bottom: 1px solid $orange-potion;
+
+  > * {
+    flex: 1 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}

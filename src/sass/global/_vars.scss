@@ -10,8 +10,8 @@
    %% Import your fonts here %%
    ========================================================================== */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i");
 
 /* ==========================================================================
    %% Global Color Palette %%
@@ -27,7 +27,7 @@ $light-gray: #bbbbbb;
 $gray: #999999;
 $medium-gray: #777777;
 $dark-gray: #444444;
-$xdark-gray: #222222;
+$xdark-gray: #1e2222;
 $xxdark-gray: #111111;
 $black: #000000;
 
@@ -36,12 +36,12 @@ $red-potion: #e90000;
 $green-potion: #85b933;
 $blue-potion: #2a98c6;
 $teal-potion: #0daba7;
-$orange-potion: #f57e20;
-$yellow-potion: $teal-potion;
+$orange-potion: #ff7b0f;
+$yellow-potion: #ffdc2f;
 $purple-potion: #a06eaf;
 
 // Set your global app/site variables here
-$color-primary: $blue-potion;
+$color-primary: $black;
 $color-primary-alt: #006ea2;
 $color-secondary: $green-potion;
 
@@ -79,14 +79,14 @@ $font-size-jumbo: 30px;
 
 $font-size: $font-size-base;
 
-//custom font family
-$font-1: "Parisienne", cursive;
+//custom Google font families
+$font-1: "Baloo Da", cursive;
+$font-2: "Roboto", sans-serif;
 
-$font-2: "Lato", sans-serif;
 //base san-serif font family
 $font-3: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
-//often used for code blocks
+//font icons
 $font-4: FontAwesome;
 
 $body-text: $font-size-md;

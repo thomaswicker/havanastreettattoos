@@ -55,6 +55,7 @@
 /* ## Modules ## */
 @import "modules/buttons";
 @import "modules/headers";
+@import "modules/footer";
 @import "modules/superhero";
 @import "modules/nav";
 @import "modules/about";
@@ -63,23 +64,20 @@
 @import "modules/portfolios";
 @import "modules/aftercare";
 @import "modules/contact";
+@import "modules/instagram";
+@import "modules/quotes";
+@import "modules/animations";
 
 html,
 body {
-  background-image: url("../img/bg.jpg");
-  background-size: cover;
-  font-family: $font-3;
+  font-family: $font-2;
+  background-color: $black;
+  color: $white;
 }
 
-.name img {
-  width: 90%;
-  padding-top: 0.6em;
+html {
+}
 
-  //small range (0px --> 640px)
-  @media only screen and (min-width: 0em) and (max-width: 40em) {
-    padding-top: 0.3em;
-    z-index: 1000;
-    width: 85%;
-    margin-top: -2px;
-  }
+body {
+  overflow-y: hidden;
 }
