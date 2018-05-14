@@ -2,22 +2,18 @@
 
 	// Add RSS links to <head> section
 	automatic_feed_links();
-
 	// BEGIN - Load jQuery for havanastreettatoos.com
-
 	if ( !is_admin() ) {
 	   wp_deregister_script('jquery');
-	    wp_register_script( 'jqueryJS', get_template_directory_uri() . '/css/jquery.min.js',array('jquery') );
+	    wp_register_script( 'jqueryJS', get_template_directory_uri() . '/js/jquery.js',array('jquery') );
 	    wp_enqueue_script('jqueryJS');
 	}
-
 	// END - Load jQuery for havanastreettatoos.com
 
 	// BEGIN - Load the Main Theme CSS
 	function theme_styles() {
 	    wp_enqueue_style( 'wordpress_core_style', get_template_directory_uri() . '/style.css' );
 			wp_enqueue_style( 'foundation', get_template_directory_uri() . '/css/foundation.min.css' );
-			wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/fontawesome-all.min.css' );
 	    wp_enqueue_style( 'applicationcss', get_template_directory_uri() . '/css/application.min.css' );
 	}
 
@@ -28,10 +24,7 @@
 
 	// BEGIN - Load the Main Theme JS
 	function theme_js() {
-			wp_register_script( 'foundationjs', get_template_directory_uri() . '/js/foundation.min.js',array('jquery') );
 			wp_register_script( 'application', get_template_directory_uri() . '/js/application.min.js',array('jquery') );
-
-			wp_enqueue_script( 'foundationjs' );
     	wp_enqueue_script( 'application' );
 	}
 

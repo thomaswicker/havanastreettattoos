@@ -19,11 +19,27 @@ footer.site-footer {
     .copyright-info-1 {
       margin-bottom: 5px;
       font-size: 0.8rem;
+
+      @include mq(md) {
+        font-size: 1.5rem;
+      }
+
+      @include mq(sm) {
+        font-size: 1.5rem;
+      }
     }
 
     .copyright-info-2 {
       font-size: 0.7rem;
       color: $light-gray;
+
+      @include mq(md) {
+        font-size: 1.5rem;
+      }
+
+      @include mq(sm) {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -35,6 +51,14 @@ footer.site-footer {
     line-height: 140%;
     text-align: right;
     color: $white;
+
+    @include mq(md) {
+      font-size: 1.8rem;
+    }
+
+    @include mq(sm) {
+      font-size: 1.8rem;
+    }
 
     a {
       color: $orange-potion;

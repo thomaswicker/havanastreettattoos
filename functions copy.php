@@ -17,7 +17,6 @@
 	// BEGIN - Load the Main Theme CSS
 	function theme_styles() {
 	    wp_enqueue_style( 'wordpress_core_style', get_template_directory_uri() . '/style.css' );
-	    wp_enqueue_style( 'googlefonts', 'http://fonts.googleapis.com/css?family=Parisienne' );
 	    wp_enqueue_style( 'foundation', get_template_directory_uri() . '/bower_components/foundation/css/foundation.css' );
 	    wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/application.min.css' );
 	}

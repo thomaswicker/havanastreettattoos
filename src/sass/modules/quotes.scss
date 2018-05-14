@@ -7,91 +7,164 @@
 
 */
 
-.quote-carousel {
-  flex: 1 100%;
-  padding: 2% 0 2% 0;
-  background-color: $white;
-  background-image: none;
+.quote-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
 
-  ul {
-    flex: 1 100%;
+  .orbit-container {
+    float: left;
+    width: 100%;
+    min-height: 280px;
+    padding-top: 20px;
+    background-color: $white;
 
-    li.orbit-slide {
-      .quote-content {
-        margin-bottom: 10px;
-        padding: 10px 20% 0 20%;
-        font-family: $font-2;
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 145%;
-        text-align: left;
-        color: $black;
-      }
-
-      .quotee {
-        display: flex;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding: 0 20%;
-        text-align: left;
-        color: $black;
-        font-family: $font-2;
-        font-size: 1.1rem;
-        font-style: italic;
-        font-weight: 700;
-
-        .quotee-name {
-          padding-right: 1px;
-        }
-
-        .quotee-from {
-          padding-left: 1px;
-          padding-right: 1px;
-        }
-
-        .quotee-source {
-          padding-left: 1px;
-        }
-      }
+    @include mq(md) {
+      min-height: 850px;
     }
 
-    .orbit-previous,
-    .orbit-next {
-      background-color: transparent;
-      border: 0;
-      transition: all 140ms ease-in-out;
+    @include mq(sm) {
+      min-height: 850px;
+    }
 
-      &:hover {
-        background-color: transparent;
-        border: 0;
+    .orbit-slide-number,
+    .orbit-timer,
+    .orbit-bullets-container {
+      display: none;
+    }
 
-        svg {
-          transform: scale(1.1);
+    .quote-carousel {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      float: left;
+      width: 100%;
+      background-color: $white;
+      background-image: none;
 
-          path {
-            fill: #333333;
+      .quote {
+        top: 15px;
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: $white;
+
+        .quote-content {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 2% 12% 0 12%;
+          font-family: $font-2;
+          font-size: 1.6rem;
+          font-weight: 300;
+          line-height: 145%;
+          text-align: left;
+          color: $black;
+
+          @include mq(md) {
+            font-size: 3.3rem;
+          }
+
+          @include mq(sm) {
+            font-size: 3.4rem;
+          }
+        }
+
+        .quotee {
+          float: left;
+          width: 100%;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          padding: 0 12%;
+          text-align: left;
+          color: $black;
+          font-family: $font-2;
+          font-size: 1.1rem;
+          font-style: italic;
+          font-weight: 700;
+
+          @include mq(md) {
+            margin-top: 20px;
+            font-size: 2.4rem;
+          }
+
+          @include mq(sm) {
+            margin-top: 20px;
+            font-size: 2.5rem;
+          }
+
+          .quotee-name {
+            float: left;
+            width: auto;
+            padding-right: 1px;
+          }
+
+          .quotee-from {
+            float: left;
+            width: auto;
+            padding-left: 1px;
+            padding-right: 1px;
+          }
+
+          .quotee-source {
+            float: left;
+            width: auto;
+            padding-left: 1px;
           }
         }
       }
+    }
+  }
 
-      svg {
-        max-width: 30px;
+  .orbit-container .orbit-prev {
+    background-color: $xxlight-gray;
 
-        path {
-          fill: #cccccc;
-        }
+    > span {
+      border-right-color: $light-gray;
+
+      @include mq(md) {
+        transform: scale(2);
+      }
+
+      @include mq(sm) {
+        transform: scale(2);
       }
     }
 
-    .orbit-previous {
-      &:hover svg {
-        animation: pulseleftarrow 1200ms infinite;
+    &:hover {
+      background-color: $orange-potion;
+
+      > span {
+        border-left-color: $white;
+      }
+    }
+  }
+
+  .orbit-container .orbit-next {
+    background-color: $xxlight-gray;
+
+    > span {
+      border-left-color: $light-gray;
+
+      @include mq(md) {
+        transform: scale(2);
+      }
+
+      @include mq(sm) {
+        transform: scale(2);
       }
     }
 
-    .orbit-next {
-      &:hover svg {
-        animation: pulserightarrow 1200ms infinite;
+    &:hover {
+      background-color: $orange-potion;
+
+      > span {
+        border-left-color: $white;
       }
     }
   }

@@ -79,6 +79,14 @@
       font-weight: 500;
       line-height: 140%;
       color: $black;
+
+      @include mq(md) {
+        font-size: 3.5rem;
+      }
+
+      @include mq(sm) {
+        font-size: 3.5rem;
+      }
     }
 
     .shop--phone {
@@ -87,6 +95,14 @@
       font-size: 1.2rem;
       font-weight: 300;
       color: $black;
+
+      @include mq(md) {
+        font-size: 2rem;
+      }
+
+      @include mq(sm) {
+        font-size: 2rem;
+      }
     }
 
     .contact-us--btn {
@@ -101,6 +117,20 @@
 
       &:hover {
         background-color: lighten($orange-potion, 12%);
+      }
+
+      @include mq(md) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 30px 60px;
+        font-size: 3.2rem;
+      }
+
+      @include mq(sm) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 20px 60px;
+        font-size: 3.2rem;
       }
     }
   }

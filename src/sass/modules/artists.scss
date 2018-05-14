@@ -9,10 +9,20 @@
 
 .artists-section {
   padding: 30px 60px 40px 60px;
-  background-image: url("../img/about-us-background.jpg");
+  background-image: url('../img/about-us-background.jpg');
   background-color: $xdark-gray;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include mq(md) {
+    display: block;
+    padding: 20px 40px 20px 40px;
+  }
+
+  @include mq(sm) {
+    display: block;
+    padding: 20px 40px 20px 40px;
+  }
 
   .section-title {
     flex: 1 100%;
@@ -52,20 +62,46 @@
       display: flex;
       margin-bottom: 25px;
       padding-top: 20px;
-      border-top: 1px solid #333333;
+      border-top: 1px solid $dark-gray;
 
       @include mq(md) {
+        display: block;
+        width: 100%;
         margin-bottom: 55px;
         padding-top: 50px;
       }
 
       @include mq(sm) {
+        display: block;
+        width: 100%;
         margin-bottom: 55px;
         padding-top: 50px;
       }
 
       .artist--left {
-        flex: 0 0 200px;
+        width: 200px;
+
+        @include mq(md) {
+          width: 100%;
+          padding-bottom: 30px;
+          text-align: center;
+
+          img {
+            min-width: 250px;
+            max-width: 350px;
+          }
+        }
+
+        @include mq(sm) {
+          width: 100%;
+          padding-bottom: 30px;
+          text-align: center;
+
+          img {
+            min-width: 250px;
+            max-width: 350px;
+          }
+        }
 
         img {
           width: 100%;
@@ -77,8 +113,19 @@
       }
 
       .artist--right {
-        flex: 1;
+        width: 100%;
+        flex-grow: 1;
         padding-left: 50px;
+
+        @include mq(md) {
+          width: 100%;
+          padding-left: 20px;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+          padding-left: 20px;
+        }
 
         h4 {
           font-family: $font-2;
@@ -88,11 +135,15 @@
           color: $orange-potion;
 
           @include mq(md) {
+            padding-bottom: 20px;
             font-size: 5rem;
+            text-align: center;
           }
 
           @include mq(sm) {
+            padding-bottom: 20px;
             font-size: 4.5rem;
+            text-align: center;
           }
         }
 
@@ -100,20 +151,20 @@
           margin-top: 10px;
           margin-bottom: 20px;
           font-family: $font-3;
-          font-size: 1rem;
+          font-size: 0.9rem;
           font-weight: 300;
           line-height: 145%;
           color: #cccccc;
 
           @include mq(md) {
             flex: 1 100%;
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             line-height: 145%;
           }
 
           @include mq(sm) {
             flex: 1 100%;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             line-height: 145%;
           }
         }
@@ -125,18 +176,45 @@
 
           li {
             flex: 0;
-            padding: 0 15px 0 0;
+            padding: 0 15px 0 15px;
+            border-right: 1px solid #676767;
             text-transform: uppercase;
+
+            @include mq(md) {
+              padding-top: 60px;
+            }
+
+            @include mq(sm) {
+              padding-top: 60px;
+            }
+
+            &:first-child {
+              padding-left: 0;
+            }
+
+            &:last-child {
+              border-right: 0;
+            }
 
             a {
               font-family: $font-2;
-              font-size: 16px;
+              font-size: 0.8rem;
               font-weight: 600;
               color: $white;
-              text-decoration: underline;
+
+              @include mq(md) {
+                font-size: 2.6rem;
+                color: $orange-potion;
+              }
+
+              @include mq(sm) {
+                font-size: 2.7rem;
+                color: $orange-potion;
+              }
 
               &:hover {
                 color: $orange-potion;
+                text-decoration: none;
               }
             }
           }

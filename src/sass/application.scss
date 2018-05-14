@@ -45,32 +45,31 @@
 @charset "UTF-8";
 
 /* ## Base ## */
-@import "base/reset";
-@import "base/normalize";
-@import "base/main";
-@import "base/grids";
-@import "base/type";
-@import "base/helpers";
+@import 'base/reset';
+@import 'base/normalize';
+@import 'base/main';
+@import 'base/grids';
+@import 'base/type';
+@import 'base/helpers';
 
 /* ## Modules ## */
-@import "modules/buttons";
-@import "modules/headers";
-@import "modules/footer";
-@import "modules/superhero";
-@import "modules/nav";
-@import "modules/about";
-@import "modules/contact";
-@import "modules/artists";
-@import "modules/portfolios";
-@import "modules/aftercare";
-@import "modules/contact";
-@import "modules/instagram";
-@import "modules/quotes";
-@import "modules/animations";
+@import 'modules/buttons';
+@import 'modules/headers';
+@import 'modules/footer';
+@import 'modules/superhero';
+@import 'modules/nav';
+@import 'modules/about';
+@import 'modules/contact';
+@import 'modules/artists';
+@import 'modules/portfolios';
+@import 'modules/aftercare';
+@import 'modules/contact';
+@import 'modules/instagram';
+@import 'modules/quotes';
+@import 'modules/animations';
 
 html,
 body {
-  font-family: $font-2;
   background-color: $black;
   color: $white;
 }
@@ -79,5 +78,6 @@ html {
 }
 
 body {
-  overflow-y: hidden;
+  font-family: $font-2;
+  overflow-y: initial;
 }

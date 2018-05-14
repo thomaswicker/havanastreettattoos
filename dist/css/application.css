@@ -48,7 +48,7 @@
  | |___ ___) |__) | |  _ <| |___ ___) | |___  | |
   \____|____/____/  |_| \_\_____|____/|_____| |_|
 */
-@import url("https://fonts.googleapis.com/css?family=Baloo+Da");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -626,10 +626,9 @@ html {
   overflow-x: hidden; }
 
 body {
-  font-family: "Baloo Da", cursive;
+  font-family: "Great Vibes", cursive;
   background-color: #ffffff;
-  letter-spacing: normal;
-  overflow-y: auto; }
+  letter-spacing: normal; }
 
 a {
   color: #000000;
@@ -1669,7 +1668,7 @@ _______   ______  _____
   text-transform: uppercase !important; }
 
 .font-1 {
-  font-family: "Baloo Da", cursive; }
+  font-family: "Great Vibes", cursive; }
 
 .font-2 {
   font-family: "Roboto", sans-serif; }
@@ -1762,22 +1761,22 @@ _______   ______  _____
   color: #85b933; }
 
 .text-wind {
-  color: #bbbbbb; }
+  color: #ababab; }
 
 .text-water {
   color: #2a98c6; }
 
 .text-xlight {
-  color: #bbbbbb; }
+  color: #ababab; }
 
 .text-light {
-  color: #bbbbbb; }
+  color: #ababab; }
 
 .text-medium {
   color: #777777; }
 
 .text-dark {
-  color: #444444; }
+  color: #343434; }
 
 /* ==========================================================================
 %% Body Text Color Helper Classes %%
@@ -1828,7 +1827,7 @@ _______   ______  _____
       font-size: 16px; } }
 
 .body-text-small {
-  font-family: "Baloo Da", cursive, Helvetica, Arial, sans-serif;
+  font-family: "Great Vibes", cursive, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1837,7 +1836,7 @@ _______   ______  _____
   margin-bottom: 1.1em; }
 
 .body-text-large {
-  font-family: "Baloo Da", cursive, Helvetica, Arial, sans-serif;
+  font-family: "Great Vibes", cursive, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1861,13 +1860,13 @@ _______   ______  _____
   color: #cccccc; }
 
 .text-color.light-gray {
-  color: #bbbbbb; }
+  color: #ababab; }
 
 .text-color.medium-gray {
   color: #777777; }
 
 .text-color.dark-gray {
-  color: #444444; }
+  color: #343434; }
 
 .text-color.black {
   color: #000000; }
@@ -1952,13 +1951,13 @@ _______   ______  _____
   border-width: rem-calc(5); }
 
 .border.dark {
-  border-color: #444444; }
+  border-color: #343434; }
 
 .border.medium {
   border-color: #777777; }
 
 .border.light {
-  border-color: #bbbbbb; }
+  border-color: #ababab; }
 
 .border.xlight {
   border-color: #f4f4f4; }
@@ -2188,13 +2187,13 @@ _______   ______  _____
   background-color: #f4f4f4; }
 
 .bg-color.xxlight-gray {
-  background-color: #dddddd; }
+  background-color: #ededed; }
 
 .bg-color.xlight-gray {
   background-color: #cccccc; }
 
 .bg-color.light-gray {
-  background-color: #bbbbbb; }
+  background-color: #ababab; }
 
 .bg-color.gray {
   background-color: #999999; }
@@ -2203,7 +2202,7 @@ _______   ______  _____
   background-color: #777777; }
 
 .bg-color.dark-gray {
-  background-color: #444444; }
+  background-color: #343434; }
 
 .bg-color.xdark-gray {
   background-color: #1e2222; }
@@ -2267,7 +2266,7 @@ button {
   padding: 20px 25px;
   border: 2px solid #000000;
   border-radius: 0;
-  font-family: "Baloo Da", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 13px;
   font-weight: 500;
   text-align: center;
@@ -2368,25 +2367,25 @@ button {
   .btn.btn-dark,
   .button.btn-dark,
   button.btn-dark {
-    border: 2px solid #444444;
-    background: #444444;
+    border: 2px solid #343434;
+    background: #343434;
     color: #ffffff; }
     .btn.btn-dark:hover,
     .button.btn-dark:hover,
     button.btn-dark:hover {
-      border: 2px solid #1e1e1e;
-      background: #1e1e1e; }
+      border: 2px solid #0e0e0e;
+      background: #0e0e0e; }
   .btn.btn-gray,
   .button.btn-gray,
   button.btn-gray {
-    border: 2px solid #bbbbbb;
-    background: #bbbbbb;
+    border: 2px solid #ababab;
+    background: #ababab;
     color: #ffffff; }
     .btn.btn-gray:hover,
     .button.btn-gray:hover,
     button.btn-gray:hover {
-      border: 2px solid #959595;
-      background: #959595; }
+      border: 2px solid #858585;
+      background: #858585; }
   .btn:disabled, .btn.js-disabled, .btn.btn-disabled,
   .button:disabled,
   .button.js-disabled,
@@ -2395,7 +2394,7 @@ button {
   button.js-disabled,
   button.btn-disabled {
     cursor: default;
-    background: #bbbbbb !important;
+    background: #ababab !important;
     color: #f4f4f4;
     pointer-events: none; }
   .btn.btn-inline,
@@ -2414,7 +2413,7 @@ button {
   button.btn-small {
     min-width: 0;
     padding: 0.75rem 1.25rem;
-    font-family: "Baloo Da", cursive, Helvetica, Arial, sans-serif;
+    font-family: "Great Vibes", cursive, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px; }
@@ -2423,7 +2422,7 @@ button {
   button.btn-mini {
     min-width: 0;
     padding: 7px 14px;
-    font-family: "Baloo Da", cursive, Helvetica, Arial, sans-serif;
+    font-family: "Great Vibes", cursive, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px; }
@@ -2432,7 +2431,7 @@ button {
   button.btn-small {
     min-width: 0;
     padding: 15px 15px;
-    font-family: "Baloo Da", cursive, Helvetica, Arial, sans-serif;
+    font-family: "Great Vibes", cursive, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px; }
@@ -2448,7 +2447,7 @@ button {
     min-width: 0;
     padding-left: 4.5rem;
     padding-right: 4.5rem;
-    font-family: "Baloo Da", cursive, Helvetica, Arial, sans-serif;
+    font-family: "Great Vibes", cursive, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px; }
@@ -2471,10 +2470,10 @@ h6 {
   padding: 0; }
 
 h1 {
-  font-family: "Baloo Da", cursive; }
+  font-family: "Great Vibes", cursive; }
 
 h3.section-title {
-  font-family: "Baloo Da", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 40px;
   font-weight: 600;
   color: #ffffff; }
@@ -2499,9 +2498,21 @@ footer.site-footer {
     footer.site-footer .footer--left .copyright-info-1 {
       margin-bottom: 5px;
       font-size: 0.8rem; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        footer.site-footer .footer--left .copyright-info-1 {
+          font-size: 1.5rem; } }
+      @media only screen and (max-width: 640px) {
+        footer.site-footer .footer--left .copyright-info-1 {
+          font-size: 1.5rem; } }
     footer.site-footer .footer--left .copyright-info-2 {
       font-size: 0.7rem;
-      color: #bbbbbb; }
+      color: #ababab; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        footer.site-footer .footer--left .copyright-info-2 {
+          font-size: 1.5rem; } }
+      @media only screen and (max-width: 640px) {
+        footer.site-footer .footer--left .copyright-info-2 {
+          font-size: 1.5rem; } }
   footer.site-footer .footer--right {
     flex: 1 30%;
     padding-top: 5px;
@@ -2510,6 +2521,12 @@ footer.site-footer {
     line-height: 140%;
     text-align: right;
     color: #ffffff; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      footer.site-footer .footer--right {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 640px) {
+      footer.site-footer .footer--right {
+        font-size: 1.8rem; } }
     footer.site-footer .footer--right a {
       color: #ff7b0f; }
       footer.site-footer .footer--right a:hover {
@@ -2527,7 +2544,7 @@ footer.site-footer {
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  padding: 80px 60px;
+  padding: 0 60px 40px 60px;
   background-color: #1e2222;
   background-image: url("../img/superhero-background.jpg");
   background-size: cover;
@@ -2536,10 +2553,14 @@ footer.site-footer {
   border-top: 3px solid #ff7b0f; }
   @media only screen and (min-width: 640px) and (max-width: 1024px) {
     .superhero {
-      background-image: url("../img/superhero-background--mobile.jpg"); } }
+      padding: 30px 60px 60px 60px;
+      background-image: url("../img/superhero-background--mobile.jpg");
+      border-top: 10px solid #ff7b0f; } }
   @media only screen and (max-width: 640px) {
     .superhero {
-      background-image: url("../img/superhero-background--mobile.jpg"); } }
+      padding: 30px 60px 60px 60px;
+      background-image: url("../img/superhero-background--mobile.jpg");
+      border-top: 10px solid #ff7b0f; } }
   .superhero > * {
     flex: 1 100%; }
   .superhero .superhero-links {
@@ -2550,10 +2571,24 @@ footer.site-footer {
     .superhero .superhero-links li {
       flex: 1;
       margin-right: 15px; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .superhero .superhero-links li {
+          margin-top: 30px;
+          margin-right: 65px; } }
+      @media only screen and (max-width: 640px) {
+        .superhero .superhero-links li {
+          margin-top: 30px;
+          margin-right: 65px; } }
       .superhero .superhero-links li a svg {
-        transition: all 200ms ease-in-out; }
+        transition: all 100ms cubic-bezier(0.37, 1.34, 1, 1.1); }
         .superhero .superhero-links li a svg:hover {
           transform: scale(1.2); }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .superhero .superhero-links li a svg {
+            transform: scale(2.5); } }
+        @media only screen and (max-width: 640px) {
+          .superhero .superhero-links li a svg {
+            transform: scale(2.5); } }
       .superhero .superhero-links li.facebook-icon-link a svg {
         max-width: 20px; }
         .superhero .superhero-links li.facebook-icon-link a svg path {
@@ -2566,14 +2601,26 @@ footer.site-footer {
         fill: #ff7b0f; }
       .superhero .superhero-links li:hover.instagram-icon-link a svg path {
         fill: #ff7b0f; }
-  .superhero .superhero-illustration-container {
-    flex: 1 100%; }
-    .superhero .superhero-illustration-container img.superhero-illustration {
-      max-width: 300px; }
+  .superhero img.superhero-illustration {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .superhero img.superhero-illustration {
+        max-width: 350px; } }
+    @media only screen and (max-width: 640px) {
+      .superhero img.superhero-illustration {
+        max-width: 350px; } }
   .superhero .superhero-title {
     font-size: 100px;
     color: #ffffff;
     text-shadow: 2px 2px 2px #000000; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .superhero .superhero-title {
+        font-size: 100px; } }
+    @media only screen and (max-width: 640px) {
+      .superhero .superhero-title {
+        font-size: 100px; } }
   .superhero .superhero-subtitle {
     margin-top: -5px;
     margin-bottom: 10px;
@@ -2582,6 +2629,12 @@ footer.site-footer {
     font-weight: 800;
     text-shadow: 2px 2px 2px #000000;
     color: #ff7b0f; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .superhero .superhero-subtitle {
+        display: none; } }
+    @media only screen and (max-width: 640px) {
+      .superhero .superhero-subtitle {
+        display: none; } }
   .superhero .hours-of-operation {
     margin-bottom: 10px;
     font-size: 18px;
@@ -2589,6 +2642,14 @@ footer.site-footer {
     font-weight: 600;
     color: #ffffff;
     text-shadow: 2px 2px 2px #000000; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .superhero .hours-of-operation {
+        font-size: 2rem;
+        color: #ff7b0f; } }
+    @media only screen and (max-width: 640px) {
+      .superhero .hours-of-operation {
+        font-size: 2rem;
+        color: #ff7b0f; } }
   .superhero .shop-phone-number {
     margin-top: 20px; }
     @media only screen and (max-width: 640px) {
@@ -2602,7 +2663,16 @@ footer.site-footer {
       color: #dedede;
       text-shadow: 2px 2px 2px #000000; }
       .superhero .shop-phone-number a:hover {
-        color: #ffffff; }
+        color: #ffffff;
+        text-decoration: none; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .superhero .shop-phone-number a {
+          padding-bottom: 30px;
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 640px) {
+        .superhero .shop-phone-number a {
+          padding-bottom: 30px;
+          font-size: 3.5rem; } }
   .superhero .specials-btn {
     position: absolute;
     right: 20px;
@@ -2683,7 +2753,9 @@ footer.site-footer {
 */
 .about-us-section {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
   padding: 50px 60px 40px 60px;
   background-color: #676767;
   background-image: url("../img/bg.jpg");
@@ -2693,18 +2765,25 @@ footer.site-footer {
   border-top: 1px solid #555555;
   border-bottom: 2px solid #111111;
   text-align: left; }
-  .about-us-section > * {
-    flex: 1 100%; }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .about-us-section {
+      display: block;
+      padding: 20px 40px 20px 40px;
+      border-top: 3px solid #777777; } }
+  @media only screen and (max-width: 640px) {
+    .about-us-section {
+      display: block;
+      padding: 20px 40px 20px 40px;
+      border-top: 3px solid #777777; } }
   .about-us-section .section-title {
-    flex: 1 100%;
     color: #ffffff; }
     @media only screen and (min-width: 640px) and (max-width: 1024px) {
       .about-us-section .section-title {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         line-height: 110%; } }
     @media only screen and (max-width: 640px) {
       .about-us-section .section-title {
-        font-size: 6rem;
+        font-size: 4rem;
         line-height: 105%; } }
     .about-us-section .section-title img {
       position: relative;
@@ -2718,19 +2797,21 @@ footer.site-footer {
         .about-us-section .section-title img {
           max-width: 55px; } }
   .about-us-section .about-us--left {
-    flex: 1 70%;
+    width: 100%;
+    flex-grow: 1;
     padding-right: 100px; }
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-      .about-us-section .about-us--left {
-        flex: 1 60%; } }
     @media only screen and (min-width: 640px) and (max-width: 1024px) {
       .about-us-section .about-us--left {
-        flex: 1 100%;
-        padding-right: 20px; } }
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 50px;
+        padding-bottom: 30px; } }
     @media only screen and (max-width: 640px) {
       .about-us-section .about-us--left {
-        flex: 1 100%;
-        padding-right: 20px; } }
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 50px;
+        padding-bottom: 30px; } }
     .about-us-section .about-us--left .section-title {
       margin-bottom: 15px; }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
@@ -2744,30 +2825,91 @@ footer.site-footer {
     .about-us-section .about-us--left .about-us--blurb {
       margin-bottom: 25px;
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 1.3rem;
+      font-size: 1rem;
       line-height: 145%; }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .about-us-section .about-us--left .about-us--blurb {
           flex: 1 100%;
-          font-size: 2.2rem;
+          font-size: 2.4rem;
           line-height: 145%; } }
       @media only screen and (max-width: 640px) {
         .about-us-section .about-us--left .about-us--blurb {
-          flex: 1 100%;
-          font-size: 2rem;
+          font-size: 2.5rem;
+          line-height: 145%; } }
+    .about-us-section .about-us--left .about-us--blurb-tagline {
+      margin-bottom: 25px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 145%; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .about-us-section .about-us--left .about-us--blurb-tagline {
+          font-size: 2.4rem;
+          line-height: 145%; } }
+      @media only screen and (max-width: 640px) {
+        .about-us-section .about-us--left .about-us--blurb-tagline {
+          font-size: 2.5rem;
           line-height: 145%; } }
   .about-us-section .about-us--right {
-    flex: 1 30%; }
-    .about-us-section .about-us--right img.about-us-photo {
-      max-width: 400px;
+    width: 300px;
+    padding-right: 30px; }
+    .about-us-section .about-us--right .orbit-container .orbit-slide-number,
+    .about-us-section .about-us--right .orbit-container .orbit-timer,
+    .about-us-section .about-us--right .orbit-container .orbit-bullets-container {
+      display: none; }
+    .about-us-section .about-us--right .orbit-container ul.about-us-photos {
+      max-width: 300px;
       border: 5px solid #ffffff;
       box-shadow: 2px 2px 2px #000000; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .about-us-section .about-us--right .orbit-container ul.about-us-photos {
+          max-width: none; } }
+      @media only screen and (max-width: 640px) {
+        .about-us-section .about-us--right .orbit-container ul.about-us-photos {
+          max-width: none; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .about-us-section .about-us--right .orbit-container ul.about-us-photos .about-us-photo img.about-us-photo-image {
+          width: 100%; } }
+      @media only screen and (max-width: 640px) {
+        .about-us-section .about-us--right .orbit-container ul.about-us-photos .about-us-photo img.about-us-photo-image {
+          width: 100%; } }
     @media only screen and (min-width: 640px) and (max-width: 1024px) {
       .about-us-section .about-us--right {
-        flex: 1 100%; } }
+        width: 100%;
+        padding-bottom: 50px; } }
     @media only screen and (max-width: 640px) {
       .about-us-section .about-us--right {
-        flex: 1 100%; } }
+        width: 100%;
+        padding-bottom: 50px; } }
+    .about-us-section .about-us--right .orbit-container .orbit-prev {
+      background-color: #ededed; }
+      .about-us-section .about-us--right .orbit-container .orbit-prev > span {
+        border-right-color: #ababab; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .about-us-section .about-us--right .orbit-container .orbit-prev > span {
+            transform: scale(2); } }
+        @media only screen and (max-width: 640px) {
+          .about-us-section .about-us--right .orbit-container .orbit-prev > span {
+            transform: scale(2); } }
+      .about-us-section .about-us--right .orbit-container .orbit-prev:hover {
+        background-color: #ff7b0f; }
+        .about-us-section .about-us--right .orbit-container .orbit-prev:hover > span {
+          border-left-color: #ffffff; }
+    .about-us-section .about-us--right .orbit-container .orbit-next {
+      background-color: #ededed; }
+      .about-us-section .about-us--right .orbit-container .orbit-next > span {
+        border-left-color: #ababab; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .about-us-section .about-us--right .orbit-container .orbit-next > span {
+            transform: scale(2); } }
+        @media only screen and (max-width: 640px) {
+          .about-us-section .about-us--right .orbit-container .orbit-next > span {
+            transform: scale(2); } }
+      .about-us-section .about-us--right .orbit-container .orbit-next:hover {
+        background-color: #ff7b0f; }
+        .about-us-section .about-us--right .orbit-container .orbit-next:hover > span {
+          border-left-color: #ffffff; }
 
 /*
   ____ ___  _   _ _____  _    ____ _____
@@ -2833,12 +2975,24 @@ footer.site-footer {
       font-weight: 500;
       line-height: 140%;
       color: #000000; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .contact-us-section .contact-us-section--right .shop--address {
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 640px) {
+        .contact-us-section .contact-us-section--right .shop--address {
+          font-size: 3.5rem; } }
     .contact-us-section .contact-us-section--right .shop--phone {
       margin: 10px 0 15px 0;
       font-family: "Roboto", sans-serif;
       font-size: 1.2rem;
       font-weight: 300;
       color: #000000; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .contact-us-section .contact-us-section--right .shop--phone {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 640px) {
+        .contact-us-section .contact-us-section--right .shop--phone {
+          font-size: 2rem; } }
     .contact-us-section .contact-us-section--right .contact-us--btn {
       margin-top: 10px;
       padding: 12px 30px;
@@ -2850,6 +3004,18 @@ footer.site-footer {
       border: 0; }
       .contact-us-section .contact-us-section--right .contact-us--btn:hover {
         background-color: #ff9d4c; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .contact-us-section .contact-us-section--right .contact-us--btn {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          padding: 30px 60px;
+          font-size: 3.2rem; } }
+      @media only screen and (max-width: 640px) {
+        .contact-us-section .contact-us-section--right .contact-us--btn {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          padding: 20px 60px;
+          font-size: 3.2rem; } }
 
 /*
     _    ____ _____ ___ ____ _____ ____
@@ -2865,6 +3031,14 @@ footer.site-footer {
   background-color: #1e2222;
   background-size: cover;
   background-repeat: no-repeat; }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .artists-section {
+      display: block;
+      padding: 20px 40px 20px 40px; } }
+  @media only screen and (max-width: 640px) {
+    .artists-section {
+      display: block;
+      padding: 20px 40px 20px 40px; } }
   .artists-section .section-title {
     flex: 1 100%;
     margin-bottom: 30px;
@@ -2894,17 +3068,37 @@ footer.site-footer {
       display: flex;
       margin-bottom: 25px;
       padding-top: 20px;
-      border-top: 1px solid #333333; }
+      border-top: 1px solid #343434; }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .artists-section .artists .artist {
+          display: block;
+          width: 100%;
           margin-bottom: 55px;
           padding-top: 50px; } }
       @media only screen and (max-width: 640px) {
         .artists-section .artists .artist {
+          display: block;
+          width: 100%;
           margin-bottom: 55px;
           padding-top: 50px; } }
       .artists-section .artists .artist .artist--left {
-        flex: 0 0 200px; }
+        width: 200px; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .artists-section .artists .artist .artist--left {
+            width: 100%;
+            padding-bottom: 30px;
+            text-align: center; }
+            .artists-section .artists .artist .artist--left img {
+              min-width: 250px;
+              max-width: 350px; } }
+        @media only screen and (max-width: 640px) {
+          .artists-section .artists .artist .artist--left {
+            width: 100%;
+            padding-bottom: 30px;
+            text-align: center; }
+            .artists-section .artists .artist .artist--left img {
+              min-width: 250px;
+              max-width: 350px; } }
         .artists-section .artists .artist .artist--left img {
           width: 100%;
           max-width: 175px;
@@ -2912,8 +3106,17 @@ footer.site-footer {
           border: 5px solid #ffffff;
           box-shadow: 2px 2px 2px #000000; }
       .artists-section .artists .artist .artist--right {
-        flex: 1;
+        width: 100%;
+        flex-grow: 1;
         padding-left: 50px; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .artists-section .artists .artist .artist--right {
+            width: 100%;
+            padding-left: 20px; } }
+        @media only screen and (max-width: 640px) {
+          .artists-section .artists .artist .artist--right {
+            width: 100%;
+            padding-left: 20px; } }
         .artists-section .artists .artist .artist--right h4 {
           font-family: "Roboto", sans-serif;
           font-size: 2rem;
@@ -2922,27 +3125,31 @@ footer.site-footer {
           color: #ff7b0f; }
           @media only screen and (min-width: 640px) and (max-width: 1024px) {
             .artists-section .artists .artist .artist--right h4 {
-              font-size: 5rem; } }
+              padding-bottom: 20px;
+              font-size: 5rem;
+              text-align: center; } }
           @media only screen and (max-width: 640px) {
             .artists-section .artists .artist .artist--right h4 {
-              font-size: 4.5rem; } }
+              padding-bottom: 20px;
+              font-size: 4.5rem;
+              text-align: center; } }
         .artists-section .artists .artist .artist--right .artist-bio {
           margin-top: 10px;
           margin-bottom: 20px;
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-          font-size: 1rem;
+          font-size: 0.9rem;
           font-weight: 300;
           line-height: 145%;
           color: #cccccc; }
           @media only screen and (min-width: 640px) and (max-width: 1024px) {
             .artists-section .artists .artist .artist--right .artist-bio {
               flex: 1 100%;
-              font-size: 2.5rem;
+              font-size: 2.4rem;
               line-height: 145%; } }
           @media only screen and (max-width: 640px) {
             .artists-section .artists .artist .artist--right .artist-bio {
               flex: 1 100%;
-              font-size: 2.8rem;
+              font-size: 2.5rem;
               line-height: 145%; } }
         .artists-section .artists .artist .artist--right ul.artist-links {
           display: flex;
@@ -2950,16 +3157,35 @@ footer.site-footer {
           text-align: left; }
           .artists-section .artists .artist .artist--right ul.artist-links li {
             flex: 0;
-            padding: 0 15px 0 0;
+            padding: 0 15px 0 15px;
+            border-right: 1px solid #676767;
             text-transform: uppercase; }
+            @media only screen and (min-width: 640px) and (max-width: 1024px) {
+              .artists-section .artists .artist .artist--right ul.artist-links li {
+                padding-top: 60px; } }
+            @media only screen and (max-width: 640px) {
+              .artists-section .artists .artist .artist--right ul.artist-links li {
+                padding-top: 60px; } }
+            .artists-section .artists .artist .artist--right ul.artist-links li:first-child {
+              padding-left: 0; }
+            .artists-section .artists .artist .artist--right ul.artist-links li:last-child {
+              border-right: 0; }
             .artists-section .artists .artist .artist--right ul.artist-links li a {
               font-family: "Roboto", sans-serif;
-              font-size: 16px;
+              font-size: 0.8rem;
               font-weight: 600;
-              color: #ffffff;
-              text-decoration: underline; }
+              color: #ffffff; }
+              @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                .artists-section .artists .artist .artist--right ul.artist-links li a {
+                  font-size: 2.6rem;
+                  color: #ff7b0f; } }
+              @media only screen and (max-width: 640px) {
+                .artists-section .artists .artist .artist--right ul.artist-links li a {
+                  font-size: 2.7rem;
+                  color: #ff7b0f; } }
               .artists-section .artists .artist .artist--right ul.artist-links li a:hover {
-                color: #ff7b0f; }
+                color: #ff7b0f;
+                text-decoration: none; }
 
 /*
  ____   ___  ____ _____ _____ ___  _     ___ ___  ____
@@ -3014,21 +3240,30 @@ footer.site-footer {
     margin-bottom: 15px; }
     .tattoo-aftercare-section ul.tattoo-aftercare-list li.tattoo-aftercare--list-item {
       position: relative;
+      display: flex;
       padding-left: 15px;
+      padding-bottom: 20px;
       margin-bottom: 20px;
       font-family: "Roboto", sans-serif;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 400;
       line-height: 140%;
-      color: #ffffff; }
+      color: #ffffff;
+      border-bottom: 1px solid #343434; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .tattoo-aftercare-section ul.tattoo-aftercare-list li.tattoo-aftercare--list-item {
+          font-size: 2.4rem; } }
+      @media only screen and (max-width: 640px) {
+        .tattoo-aftercare-section ul.tattoo-aftercare-list li.tattoo-aftercare--list-item {
+          font-size: 2.5rem; } }
+      .tattoo-aftercare-section ul.tattoo-aftercare-list li.tattoo-aftercare--list-item .left-section {
+        width: 40px; }
+      .tattoo-aftercare-section ul.tattoo-aftercare-list li.tattoo-aftercare--list-item .right-section {
+        width: 100%;
+        flex-grow: 1; }
       .tattoo-aftercare-section ul.tattoo-aftercare-list li.tattoo-aftercare--list-item svg {
-        position: relative;
-        left: -15px;
-        top: 12px;
         max-width: 20px;
-        display: inline; }
-        .tattoo-aftercare-section ul.tattoo-aftercare-list li.tattoo-aftercare--list-item svg path {
-          fill: #ff7b0f; }
+        fill: #ffffff; }
 
 /*
   ____ ___  _   _ _____  _    ____ _____
@@ -3094,12 +3329,24 @@ footer.site-footer {
       font-weight: 500;
       line-height: 140%;
       color: #000000; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .contact-us-section .contact-us-section--right .shop--address {
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 640px) {
+        .contact-us-section .contact-us-section--right .shop--address {
+          font-size: 3.5rem; } }
     .contact-us-section .contact-us-section--right .shop--phone {
       margin: 10px 0 15px 0;
       font-family: "Roboto", sans-serif;
       font-size: 1.2rem;
       font-weight: 300;
       color: #000000; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .contact-us-section .contact-us-section--right .shop--phone {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 640px) {
+        .contact-us-section .contact-us-section--right .shop--phone {
+          font-size: 2rem; } }
     .contact-us-section .contact-us-section--right .contact-us--btn {
       margin-top: 10px;
       padding: 12px 30px;
@@ -3111,6 +3358,18 @@ footer.site-footer {
       border: 0; }
       .contact-us-section .contact-us-section--right .contact-us--btn:hover {
         background-color: #ff9d4c; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .contact-us-section .contact-us-section--right .contact-us--btn {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          padding: 30px 60px;
+          font-size: 3.2rem; } }
+      @media only screen and (max-width: 640px) {
+        .contact-us-section .contact-us-section--right .contact-us--btn {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          padding: 20px 60px;
+          font-size: 3.2rem; } }
 
 /*
  ___ _   _ ____ _____  _    ____ ____      _    __  __
@@ -3127,8 +3386,57 @@ footer.site-footer {
   background-color: #1e2222;
   border-top: 1px solid #ff7b0f;
   border-bottom: 1px solid #ff7b0f; }
-  .instagram-carousel > * {
-    flex: 1 100%; }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .instagram-carousel {
+      padding: 0; } }
+  @media only screen and (max-width: 640px) {
+    .instagram-carousel {
+      padding: 0; } }
+  .instagram-carousel a.instagram-icon {
+    flex: 0 0 12%;
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: center;
+    color: #ffffff; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .instagram-carousel a.instagram-icon {
+        display: none; } }
+    @media only screen and (max-width: 640px) {
+      .instagram-carousel a.instagram-icon {
+        display: none; } }
+    .instagram-carousel a.instagram-icon:hover {
+      text-decoration: none; }
+      .instagram-carousel a.instagram-icon:hover svg {
+        max-width: 70px; }
+        .instagram-carousel a.instagram-icon:hover svg .st4,
+        .instagram-carousel a.instagram-icon:hover svg .st6,
+        .instagram-carousel a.instagram-icon:hover svg .st8 {
+          fill: #ffffff; }
+      .instagram-carousel a.instagram-icon:hover .instagram-hashtag {
+        color: #ffffff; }
+    .instagram-carousel a.instagram-icon svg {
+      position: relative;
+      top: -2px;
+      max-width: 55px;
+      transition: all 100ms cubic-bezier(0.37, 1.34, 1, 1.1); }
+      .instagram-carousel a.instagram-icon svg .st4,
+      .instagram-carousel a.instagram-icon svg .st6,
+      .instagram-carousel a.instagram-icon svg .st8 {
+        fill: #ff7b0f; }
+    .instagram-carousel a.instagram-icon .instagram-hashtag {
+      margin-top: 3px;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: #dedede; }
+  .instagram-carousel .instagram-feed {
+    flex: 1 88%; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .instagram-carousel .instagram-feed {
+        flex: 1 100%; } }
+    @media only screen and (max-width: 640px) {
+      .instagram-carousel .instagram-feed {
+        flex: 1 100%; } }
   .instagram-carousel img {
     width: 100%; }
 
@@ -3140,65 +3448,123 @@ footer.site-footer {
  \__\_\\___/ \___/ |_| |_____|____/
 
 */
-.quote-carousel {
-  flex: 1 100%;
-  padding: 2% 0 2% 0;
-  background-color: #ffffff;
-  background-image: none; }
-  .quote-carousel ul {
-    flex: 1 100%; }
-    .quote-carousel ul li.orbit-slide .quote-content {
-      margin-bottom: 10px;
-      padding: 10px 20% 0 20%;
-      font-family: "Roboto", sans-serif;
-      font-size: 2rem;
-      font-weight: 300;
-      line-height: 145%;
-      text-align: left;
-      color: #000000; }
-    .quote-carousel ul li.orbit-slide .quotee {
-      display: flex;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      padding: 0 20%;
-      text-align: left;
-      color: #000000;
-      font-family: "Roboto", sans-serif;
-      font-size: 1.1rem;
-      font-style: italic;
-      font-weight: 700; }
-      .quote-carousel ul li.orbit-slide .quotee .quotee-name {
-        padding-right: 1px; }
-      .quote-carousel ul li.orbit-slide .quotee .quotee-from {
-        padding-left: 1px;
-        padding-right: 1px; }
-      .quote-carousel ul li.orbit-slide .quotee .quotee-source {
-        padding-left: 1px; }
-    .quote-carousel ul .orbit-previous,
-    .quote-carousel ul .orbit-next {
-      background-color: transparent;
-      border: 0;
-      transition: all 140ms ease-in-out; }
-      .quote-carousel ul .orbit-previous:hover,
-      .quote-carousel ul .orbit-next:hover {
-        background-color: transparent;
-        border: 0; }
-        .quote-carousel ul .orbit-previous:hover svg,
-        .quote-carousel ul .orbit-next:hover svg {
-          transform: scale(1.1); }
-          .quote-carousel ul .orbit-previous:hover svg path,
-          .quote-carousel ul .orbit-next:hover svg path {
-            fill: #333333; }
-      .quote-carousel ul .orbit-previous svg,
-      .quote-carousel ul .orbit-next svg {
-        max-width: 30px; }
-        .quote-carousel ul .orbit-previous svg path,
-        .quote-carousel ul .orbit-next svg path {
-          fill: #cccccc; }
-    .quote-carousel ul .orbit-previous:hover svg {
-      animation: pulseleftarrow 1200ms infinite; }
-    .quote-carousel ul .orbit-next:hover svg {
-      animation: pulserightarrow 1200ms infinite; }
+.quote-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start; }
+  .quote-section .orbit-container {
+    float: left;
+    width: 100%;
+    min-height: 280px;
+    padding-top: 20px;
+    background-color: #ffffff; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .quote-section .orbit-container {
+        min-height: 850px; } }
+    @media only screen and (max-width: 640px) {
+      .quote-section .orbit-container {
+        min-height: 850px; } }
+    .quote-section .orbit-container .orbit-slide-number,
+    .quote-section .orbit-container .orbit-timer,
+    .quote-section .orbit-container .orbit-bullets-container {
+      display: none; }
+    .quote-section .orbit-container .quote-carousel {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      float: left;
+      width: 100%;
+      background-color: #ffffff;
+      background-image: none; }
+      .quote-section .orbit-container .quote-carousel .quote {
+        top: 15px;
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; }
+        .quote-section .orbit-container .quote-carousel .quote .quote-content {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 2% 12% 0 12%;
+          font-family: "Roboto", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 300;
+          line-height: 145%;
+          text-align: left;
+          color: #000000; }
+          @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .quote-section .orbit-container .quote-carousel .quote .quote-content {
+              font-size: 3.3rem; } }
+          @media only screen and (max-width: 640px) {
+            .quote-section .orbit-container .quote-carousel .quote .quote-content {
+              font-size: 3.4rem; } }
+        .quote-section .orbit-container .quote-carousel .quote .quotee {
+          float: left;
+          width: 100%;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          padding: 0 12%;
+          text-align: left;
+          color: #000000;
+          font-family: "Roboto", sans-serif;
+          font-size: 1.1rem;
+          font-style: italic;
+          font-weight: 700; }
+          @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .quote-section .orbit-container .quote-carousel .quote .quotee {
+              margin-top: 20px;
+              font-size: 2.4rem; } }
+          @media only screen and (max-width: 640px) {
+            .quote-section .orbit-container .quote-carousel .quote .quotee {
+              margin-top: 20px;
+              font-size: 2.5rem; } }
+          .quote-section .orbit-container .quote-carousel .quote .quotee .quotee-name {
+            float: left;
+            width: auto;
+            padding-right: 1px; }
+          .quote-section .orbit-container .quote-carousel .quote .quotee .quotee-from {
+            float: left;
+            width: auto;
+            padding-left: 1px;
+            padding-right: 1px; }
+          .quote-section .orbit-container .quote-carousel .quote .quotee .quotee-source {
+            float: left;
+            width: auto;
+            padding-left: 1px; }
+  .quote-section .orbit-container .orbit-prev {
+    background-color: #ededed; }
+    .quote-section .orbit-container .orbit-prev > span {
+      border-right-color: #ababab; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .quote-section .orbit-container .orbit-prev > span {
+          transform: scale(2); } }
+      @media only screen and (max-width: 640px) {
+        .quote-section .orbit-container .orbit-prev > span {
+          transform: scale(2); } }
+    .quote-section .orbit-container .orbit-prev:hover {
+      background-color: #ff7b0f; }
+      .quote-section .orbit-container .orbit-prev:hover > span {
+        border-left-color: #ffffff; }
+  .quote-section .orbit-container .orbit-next {
+    background-color: #ededed; }
+    .quote-section .orbit-container .orbit-next > span {
+      border-left-color: #ababab; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .quote-section .orbit-container .orbit-next > span {
+          transform: scale(2); } }
+      @media only screen and (max-width: 640px) {
+        .quote-section .orbit-container .orbit-next > span {
+          transform: scale(2); } }
+    .quote-section .orbit-container .orbit-next:hover {
+      background-color: #ff7b0f; }
+      .quote-section .orbit-container .orbit-next:hover > span {
+        border-left-color: #ffffff; }
 
 /*
     _    _   _ ___ __  __    _  _____ ___ ___  _   _ ____
@@ -3234,9 +3600,9 @@ footer.site-footer {
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
   background-color: #000000;
   color: #ffffff; }
 
 body {
-  overflow-y: hidden; }
+  font-family: "Roboto", sans-serif;
+  overflow-y: initial; }
