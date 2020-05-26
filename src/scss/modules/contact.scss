@@ -33,17 +33,16 @@
     img {
       position: relative;
       top: 5px;
-      max-width: 35px;
+      width: 100%;
+      max-width: 38px;
       margin-right: 5px;
 
       @include mq(md) {
-        font-size: 5.5rem;
-        line-height: 140%;
+        max-width: 100px;
       }
 
       @include mq(sm) {
-        font-size: 6rem;
-        line-height: 145%;
+        max-width: 100px;
       }
     }
   }

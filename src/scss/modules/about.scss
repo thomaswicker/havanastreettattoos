@@ -50,38 +50,40 @@
     img {
       position: relative;
       top: 5px;
-      max-width: 35px;
+      width: 100%;
+      max-width: 38px;
       margin-right: 5px;
 
       @include mq(md) {
-        max-width: 55px;
+        top: 8px;
+        max-width: 100px;
       }
 
       @include mq(sm) {
-        max-width: 55px;
+        top: 8px;
+        max-width: 100px;
       }
     }
   }
 
   .about-us--left {
-    width: 100%;
-    flex-grow: 1;
+    flex: 1 60%;
     padding-right: 100px;
 
     @include mq(lg) {
     }
 
     @include mq(md) {
-      width: 100%;
+      flex: 1 100%;
       padding-top: 20px;
-      padding-right: 50px;
+      padding-right: 0;
       padding-bottom: 30px;
     }
 
     @include mq(sm) {
-      width: 100%;
+      flex: 1 100%;
       padding-top: 20px;
-      padding-right: 50px;
+      padding-right: 0;
       padding-bottom: 30px;
     }
 
@@ -96,6 +98,10 @@
       @include mq(sm) {
         font-size: 6rem;
         line-height: 145%;
+      }
+
+      img {
+
       }
     }
 
@@ -138,99 +144,109 @@
   }
 
   .about-us--right {
-    width: 300px;
+    flex: 1 40%;
     padding-right: 30px;
 
-    .orbit-container {
-      .orbit-slide-number,
-      .orbit-timer,
-      .orbit-bullets-container {
-        display: none;
-      }
-
-      ul.about-us-photos {
-        max-width: 300px;
-        border: 5px solid $white;
-        box-shadow: 2px 2px 2px $black;
-
-        @include mq(md) {
-          max-width: none;
-        }
-
-        @include mq(sm) {
-          max-width: none;
-        }
-
-        .about-us-photo {
-          img.about-us-photo-image {
-            @include mq(md) {
-              width: 100%;
-            }
-
-            @include mq(sm) {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-
     @include mq(md) {
-      width: 100%;
+      flex: 1 100%;
+      padding-right: 0;
       padding-bottom: 50px;
+
+      iframe {
+        height: 400px;
+      }
     }
 
     @include mq(sm) {
-      width: 100%;
+      flex: 1 100%;
+      padding-right: 0;
       padding-bottom: 50px;
-    }
 
-    .orbit-container .orbit-prev {
-      background-color: $xxlight-gray;
-
-      > span {
-        border-right-color: $light-gray;
-
-        @include mq(md) {
-          transform: scale(2);
-        }
-
-        @include mq(sm) {
-          transform: scale(2);
-        }
-      }
-
-      &:hover {
-        background-color: $orange-potion;
-
-        > span {
-          border-left-color: $white;
-        }
+      iframe {
+        height: 400px;
       }
     }
 
-    .orbit-container .orbit-next {
-      background-color: $xxlight-gray;
+    // .orbit-container {
+    //   .orbit-slide-number,
+    //   .orbit-timer,
+    //   .orbit-bullets-container {
+    //     display: none;
+    //   }
 
-      > span {
-        border-left-color: $light-gray;
+    //   ul.about-us-photos {
+    //     max-width: 300px;
+    //     border: 5px solid $white;
+    //     box-shadow: 2px 2px 2px $black;
 
-        @include mq(md) {
-          transform: scale(2);
-        }
+    //     @include mq(md) {
+    //       max-width: none;
+    //     }
 
-        @include mq(sm) {
-          transform: scale(2);
-        }
-      }
+    //     @include mq(sm) {
+    //       max-width: none;
+    //     }
 
-      &:hover {
-        background-color: $orange-potion;
+    //     .about-us-photo {
+    //       img.about-us-photo-image {
+    //         @include mq(md) {
+    //           width: 100%;
+    //         }
 
-        > span {
-          border-left-color: $white;
-        }
-      }
-    }
+    //         @include mq(sm) {
+    //           width: 100%;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
+    // .orbit-container .orbit-prev {
+    //   background-color: $xxlight-gray;
+
+    //   > span {
+    //     border-right-color: $light-gray;
+
+    //     @include mq(md) {
+    //       transform: scale(2);
+    //     }
+
+    //     @include mq(sm) {
+    //       transform: scale(2);
+    //     }
+    //   }
+
+    //   &:hover {
+    //     background-color: $orange-potion;
+
+    //     > span {
+    //       border-left-color: $white;
+    //     }
+    //   }
+    // }
+
+    // .orbit-container .orbit-next {
+    //   background-color: $xxlight-gray;
+
+    //   > span {
+    //     border-left-color: $light-gray;
+
+    //     @include mq(md) {
+    //       transform: scale(2);
+    //     }
+
+    //     @include mq(sm) {
+    //       transform: scale(2);
+    //     }
+    //   }
+
+    //   &:hover {
+    //     background-color: $orange-potion;
+
+    //     > span {
+    //       border-left-color: $white;
+    //     }
+    //   }
+    // }
   }
 }

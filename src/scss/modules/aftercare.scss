@@ -8,13 +8,21 @@
 */
 
 .tattoo-aftercare-section {
-  padding: 50px 60px 40px 60px;
+  padding: 50px 250px 40px 250px;
   background-image: none;
   background-color: $color-primary;
   background-image: url('../img/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-top: 1px solid #555555;
+
+  @include mq(md) {
+    padding: 50px 25px 40px 25px;
+  }
+
+  @include mq(sm) {
+    padding: 50px 25px 40px 25px;
+  }
 
   .section-title {
     flex: 1 100%;
@@ -34,15 +42,18 @@
     img {
       position: relative;
       top: 5px;
-      max-width: 35px;
+      width: 100%;
+      max-width: 38px;
       margin-right: 5px;
 
       @include mq(md) {
-        max-width: 55px;
+        top: 8px;
+        max-width: 100px;
       }
 
       @include mq(sm) {
-        max-width: 55px;
+        top: 8px;
+        max-width: 100px;
       }
     }
   }

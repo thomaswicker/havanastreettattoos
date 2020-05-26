@@ -41,16 +41,19 @@
 
     img {
       position: relative;
-      top: 5px;
-      max-width: 42px;
+      top: 15px;
+      width: 100%;
+      max-width: 28px;
       margin-right: 5px;
 
       @include mq(md) {
-        max-width: 75px;
+        top: 15px;
+        max-width: 60px;
       }
 
       @include mq(sm) {
-        max-width: 75px;
+        top: 15px;
+        max-width: 60px;
       }
     }
   }
@@ -69,6 +72,7 @@
         width: 100%;
         margin-bottom: 55px;
         padding-top: 50px;
+        border-top: 1px solid white;
       }
 
       @include mq(sm) {
@@ -76,14 +80,26 @@
         width: 100%;
         margin-bottom: 55px;
         padding-top: 50px;
+        border-top: 1px solid white;
       }
 
       .artist--left {
-        width: 200px;
+        width: 220px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        box-shadow: 2px 2px 2px #000;
+        text-align: center;
+        overflow: hidden;
 
         @include mq(md) {
           width: 100%;
+          height: auto;
+          margin-bottom: 25px;
           padding-bottom: 30px;
+          border-radius: 0;
+          box-shadow: none;
+          border: 0;
           text-align: center;
 
           img {
@@ -94,7 +110,12 @@
 
         @include mq(sm) {
           width: 100%;
+          height: auto;
+          margin-bottom: 25px;
           padding-bottom: 30px;
+          border-radius: 0;
+          border: 0;
+          box-shadow: none;
           text-align: center;
 
           img {
@@ -104,15 +125,15 @@
         }
 
         img {
+          position: relative;
+          left: -20px;
           width: 100%;
-          max-width: 175px;
-          border-radius: 50%;
-          border: 5px solid $white;
-          box-shadow: 2px 2px 2px $black;
+          min-width: 200px;
         }
       }
 
       .artist--right {
+        position: relative;
         width: 100%;
         flex-grow: 1;
         padding-left: 50px;
@@ -135,15 +156,85 @@
           color: $orange-potion;
 
           @include mq(md) {
+            margin-bottom: 20px;
             padding-bottom: 20px;
             font-size: 5rem;
             text-align: center;
           }
 
           @include mq(sm) {
+            margin-bottom: 20px;
             padding-bottom: 20px;
             font-size: 4.5rem;
             text-align: center;
+          }
+        }
+
+        .email-link {
+          float: left;
+          width: 100%;
+          margin-top: 7px;
+          margin-bottom: 10px;
+          font-size: 16px;
+          text-transform: none;
+          text-decoration: underline;
+          color: #DEDEDE;
+
+          &:hover {
+            color: white;
+            text-decoration: underline;
+          }
+
+          @include mq(md) {
+            margin-bottom: 25px;
+            font-size: 40px;
+            text-align: center;
+          }
+
+          @include mq(sm) {
+            margin-bottom: 25px;
+            font-size: 40px;
+            text-align: center;
+          }
+        }
+
+        .artist-rate {
+          position: absolute;
+          right: 5px;
+          float: right;
+          min-width: 100px;
+          min-height: 25px;
+          padding: 5px 10px;
+          background-color: $color-primary;
+          color: $white;
+          text-align: center;
+
+          span.rate-label {
+            display: block;
+          }
+
+          span.rate-amount {
+            display: none;
+          }
+
+          &:hover {
+            cursor: help;
+
+            span.rate-label {
+              display: none;
+            }
+
+            span.rate-amount {
+              display: block;
+            }
+          }
+
+          @include mq(md) {
+            display: none;
+          }
+
+          @include mq(sm) {
+            display: none;
           }
         }
 
@@ -174,6 +265,14 @@
           margin-left: 0;
           text-align: left;
 
+          @include mq(md) {
+            margin-top: 20px;
+          }
+
+          @include mq(sm) {
+            margin-top: 20px;
+          }
+
           li {
             flex: 0;
             padding: 0 15px 0 15px;
@@ -181,11 +280,11 @@
             text-transform: uppercase;
 
             @include mq(md) {
-              padding-top: 60px;
+
             }
 
             @include mq(sm) {
-              padding-top: 60px;
+
             }
 
             &:first-child {

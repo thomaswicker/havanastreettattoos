@@ -44,40 +44,13 @@
   <a href="tel:<?php the_field('shop_phone_number'); ?>"><?php the_field('shop_phone_number'); ?></a>
 </div>
 
-<a href="#" class="btn btn-md btn-primary specials-btn" data-reveal-id="myModal">We are hiring!</a>
-
-<div id="myModal" class="reveal-modal superhero-modal" itemscope itemtype="http://schema.org/JobPosting" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-  <h2 id="modalTitle" itemprop="title" style="font-size: 22px; font-weight: 800; margin-bottom: 10px; float: left; width: 100%;">Full Time Tattoo Artist</h2>
-  <span style="float: left; width: 100%; color: black; line-height: 135%; font-family: Arial, sans-serif; font-weight: 500; margin-bottom: 6px;">
-    <p><strong>Location:</strong> <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-    <span itemprop="addressLocality">Aurora,</span> <span itemprop="addressRegion">CO</span></span></span></p>
-  </span>
-
-  <p style="float: left; width: 100%; color: black; line-height: 135%; font-family: Arial, sans-serif; font-weight: 500; margin-bottom: 6px;">
-    <strong>Industry:</strong> <span itemprop="industry">Tattoo</span>
-  </p>
-
-  <p style="float: left; width: 100%; color: black; line-height: 135%; font-family: Arial, sans-serif; font-weight: 500; margin-bottom: 6px;">
-    <strong>Hours:</strong> <span itemprop="employmentType">Full-time</span>, <span itemprop="workHours">40 hours per week</span>
-  </p>
-
-  <p itemprop="description" style="float: left; width: 100%; color: black; line-height: 135%; font-family: Arial, sans-serif; font-weight: 500; margin-bottom: 6px;">
-    <strong>Description:</strong> <span itemprop="hiringOrganization" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Havana Street Tattoo</span>
-    seeks a full-time tattoo artist with at least 5 years experience. No drugs, drama or apprentices.</span>
-  </p>
-
-  <p style="float: left; width: 100%; color: black; line-height: 135%; font-family: Arial, sans-serif; font-weight: 500; margin-bottom: 6px;"><strong>Experience requirements:</strong>
-    <ul itemprop="experienceRequirements" style="color: black; line-height: 135%; font-family: Arial, sans-serif; font-weight: 500; margin-bottom: 6px;">
-    <li>Minumum 5 years experience as a tattoo artist</li>
-    </ul>
-  </p>
+<?php if( get_field('promo_code') ): ?>
+  <a href="#" class="btn btn-md btn-primary specials-btn" data-reveal-id="myModal">Specials</a>
+<?php endif; ?>
 
 
-  <p style="float: left; width: 100%; margin-top: 6px; color: black; line-height: 135%; font-family: Arial, sans-serif; font-weight: 500; margin-bottom: 6px; font-style: italic;">If interested in this position, please email us your portfolio links to:</p>
-  <p style="float: left; width: 100%; margin-top: 6px; margin-bottom: 10px;"><a href="mailto:tattoogil@gmail.com" class="btn btn-mini btn-primary" style="background-color: #ff7b0f; border: 0; color: black; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; font-weight: 600;">tattoogil@gmail.com</a></p>
-  <p style="float: left; width: 100%; margin-top: 6px; color: black; line-height: 135%; font-family: Arial, sans-serif; font-size: 10px; color: #999999; font-weight: 500; margin-bottom: 6px;">Date Posted: <span itemprop="datePosted">2019-07-04</span></p>
-
-  <img class="ad-for-job" src="<?php bloginfo( 'template_directory' ); ?>/img/tattoo-ad.jpg" alt="Ad for Full Time Tattoo Artist Opening at Havana Street Tattoo" style="float: left; width: 100%; margin-top: 6px;">
-
+<div id="myModal" class="reveal-modal superhero-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Current Promo Code</h2>
+  <h3><?php the_field( 'promo_code' ); ?></h3>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>

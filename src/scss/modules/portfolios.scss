@@ -11,3 +11,9 @@ ul.aftercare-tips-list {
   .tattoo-aftercare-instruction {
   }
 }
+
+.envirabox-theme-base_dark .envirabox-thumbs > ul {
+  overflow: scroll !important;
+  background: #000;
+  padding-top: 10px;
+}

@@ -103,7 +103,7 @@
   </g>
 </g>
 </svg>
-<p class="instagram-hashtag">#havanastreettattoo</p>
+<p class="instagram-hashtag">#havanastreettattooshop</p>
 </a>
 <div class="instagram-feed">
   <?php get_sidebar(); ?>

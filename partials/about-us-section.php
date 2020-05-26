@@ -13,7 +13,10 @@
 </div>
 
 <div class="about-us--right">
-  <?php if( have_rows('about_us_photos') ): ?>
+  <iframe width='100%' height='300'
+  allowfullscreen src='https://tourmkr.com/t5F3KnLdVM'></iframe>
+
+  <!-- <?php if( have_rows('about_us_photos') ): ?>
   	<ul class="about-us-photos" data-orbit aria-label='Shop Photos'>
     	<?php while( have_rows('about_us_photos') ): the_row();
     		// vars
@@ -26,5 +29,5 @@
 
     	<?php endwhile; ?>
   	</ul>
-  <?php endif; ?>
+  <?php endif; ?> -->
 </div>

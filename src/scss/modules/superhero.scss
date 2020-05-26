@@ -11,7 +11,7 @@
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  padding: 0 60px 40px 60px;
+  padding: 20px 60px 40px 60px;
   background-color: $xdark-gray;
   background-image: url('../img/superhero-background.jpg');
   background-size: cover;
@@ -225,6 +225,7 @@
     &:hover {
       background-color: lighten($orange-potion, 12%);
       border: none;
+      text-decoration: none;
     }
 
     @include mq(md) {
@@ -237,5 +238,18 @@
       padding: 30px 60px;
       font-size: 20px;
     }
+  }
+}
+
+.superhero-modal {
+  h2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 50px;
   }
 }
